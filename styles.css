@@ -1,3 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: blue;
+    background-color: white;
+    font-family: Roboto, sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+button {
+    border-radius: 16px;
+    padding: 8px 20px;
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 5%;
+    color: white;
+    background-color: #1F2937;
+}
+
+.navbar button {
+    background-color: white;
+    color:#1F2937;
+}
+
+.links ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.content{
+    margin: 10%;
+    padding: 5%;
+    border: 2px solid #1F2937;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 5% auto 1% auto;
+}
+
+.header {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.top p {
+    max-width: 70%;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.input-area {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.input-button {
+    margin: 0 1.5%;
+    background-color: #1F2937;
+    color: white;
+    border: 2px white;
 }

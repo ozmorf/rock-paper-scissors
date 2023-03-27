@@ -1,2 +1,4 @@
-console.log("rock paper scissors")
-alert("everything is okay in Mayberry")
+
+let elements = ["Rock", "Paper", "Scissors"]
+let computerNumber = Math.floor((Math.random() * 3))
+let computerChoice = elements[computerNumber]
