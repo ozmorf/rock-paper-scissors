@@ -2,6 +2,8 @@
     box-sizing: border-box;
 }
 
+/* GENERAL STYLES */
+
 body {
     background-color: white;
     font-family: Roboto, sans-serif;
@@ -24,6 +26,9 @@ button {
     font-weight: bold;
 }
 
+
+/* NAVBAR */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -44,13 +49,15 @@ button {
     gap: 20px;
 }
 
+/* CONTENT SECTION */
+
 .content{
     margin: 10%;
     padding: 5%;
     border: 2px solid #1F2937;
 }
 
-.top {
+.header {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,12 +65,12 @@ button {
     margin: 5% auto 1% auto;
 }
 
-.header {
+.header h1 {
     font-size: 3em;
     font-weight: bold;
 }
 
-.top p {
+.header p {
     max-width: 70%;
     font-size: 30px;
     font-weight: lighter;
