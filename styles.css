@@ -87,3 +87,44 @@ button {
     color: white;
     border: 2px white;
 }
+
+/* DISPLAY SECTION */
+
+.display {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5%;
+    background-color: #E5E7EB;
+}
+
+.display h2 {
+    font-size: 3em;
+}
+
+.display p {
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.user, .computer {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: auto;
+    padding: 1%;
+    
+}
+
+/* .display h2, .display p {
+    margin: 8px 0;
+} */
+
+.user {
+    background-color: white;
+    color:#1F2937;
+}
+
+.computer {
+    background-color: #1F2937;
+    color: white
+}
