@@ -42,8 +42,6 @@ function generateComputerElement() {
     let computerNumber = Math.floor((Math.random() * 3))
     let computerChoice = elements[computerNumber]
     return computerElement = computerChoice
-    //console.log(`computer element: ${computerChoice}`)
-    //return computerChoice
 }
 
 // determine winner from player and computer selection
@@ -79,21 +77,33 @@ function determineWinner(playerSelection, computerSelection) {
     }
 }
 
-
-
-function game() {
-    // get user and computer element
-    let computerElement = generateComputerElement()
-    let userElement = getUserElement()
-    //console.log(`you chose ${userElement} and the computer chose ${computerChoice}`)
-
-    // determine winner
-    determineWinner(userElement, computerElement)
-    console.log(`You have ${userPoints} points and the computer has ${computerPoints} points.`)
+function registerClick() {
+    elementChosen = ""
+    const card = document.querySelector(".card")
+    const cards = Array.from(document.querySelectorAll(".card"))
+    cards.forEach(card => card.addEventListener("click", (event) => {
+        elementChosen = card.id
+        console.log(elementChosen)
+        userElement = elementChosen
+        return elementChosen
+    }))
 }
 
-setTimeout(() => {
-    for (i=0; i<4; i++) {
-        game()
-    }
-}, 10)
+function changeUserDisplay() {
+    let userDisplay = document.querySelector(".user-p")
+    userDisplay.textContent = userElement
+}
+changeUserDisplay()
+
+registerClick()
+
+// function game() {
+//     // get user and computer element
+//     let computerElement = generateComputerElement()
+//     let userElement = getUserElement()
+//     //console.log(`you chose ${userElement} and the computer chose ${computerChoice}`)
+
+//     // determine winner
+//     determineWinner(userElement, computerElement)
+//     console.log(`You have ${userPoints} points and the computer has ${computerPoints} points.`)
+// }
