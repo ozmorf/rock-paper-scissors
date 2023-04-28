@@ -115,6 +115,11 @@ button {
     align-items: center;
 }
 
+.card:hover {
+    background-color: green;
+    cursor: pointer;
+}
+
 /* DISPLAY SECTION */
 
 .display {
@@ -151,3 +156,8 @@ button {
     background-color: #1F2937;
     color: white
 }
+
+.user-score, .computer-score {
+    margin-left: 3%;
+}
+
