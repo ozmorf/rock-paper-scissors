@@ -1,3 +1,7 @@
+import { winMessages, loseMessages } from "./messages"
+// console.log(winMessages)
+
+
 function generateComputerElement() {
     let elements = ['rock', 'paper', 'scissors']
     let computerNumber = Math.floor((Math.random() * 3))
@@ -36,6 +40,11 @@ function determineWinner(userE, computerE) {
         console.log("false")
         return false
     }
+
+}
+
+function displayMessage() {
+    let messages = ['you won!', 'you lose.']
 
 }
 
